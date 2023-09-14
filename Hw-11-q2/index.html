@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script defer src="./app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form name="shapeInput">
+          <label for="shape">shape:</label>
+          <select name="shape" id="shape">
+            <option value="Polygon">Polygon</option>
+            <option value="Square">Square</option>
+            <option value="Circle">Circle</option>
+            <option value="Cylinder">Cylinder</option>
+          </select>
+          <div class="input">
+            <input
+              type="number"
+              name="Radius"
+              class="Radius"
+              placeholder="Radius"
+              required
+            />
+            <input
+              type="number"
+              name="width"
+              class="width"
+              placeholder="width"
+              required
+            />
+            <input
+              type="number"
+              name="Height"
+              class="Height"
+              placeholder="Height"
+              required
+            />
+          </div>
+        </form>
+        <button type="submit" class="btn">send</button>
+        <div class="result">
+          <span>Perimeter : <span class="resultShow"></span></span>
+          <span>Area :<span class="resultShow"> </span></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
