@@ -1,0 +1,186 @@
+@media (min-with: 767px) {
+  .input {
+    padding: 0 1rem;
+    background-color: cadetblue;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .red, .container .white .content header .social .logo, .container .white .content header .social, .container .white .content, .container .white, .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .red .content, .container .white .content main .input, .container .white .content main, .container .white .content header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  background: yellowgreen;
+}
+
+.container {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.container .white {
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 20px 0 0 20px;
+}
+.container .white .content {
+  width: 460px;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .white .content header h1 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 700;
+}
+.container .white .content header .social {
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.container .white .content header .social .logo {
+  width: 79px;
+  height: 79px;
+  border: 1px solid #d4cece;
+  border-radius: 50px;
+}
+.container .white .content main {
+  margin-top: 1rem;
+  width: 100%;
+  gap: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+}
+.container .white .content main .text {
+  color: #2f2f2f;
+}
+.container .white .content main .input {
+  width: 100%;
+  gap: 0.9rem;
+}
+.container .white .content main .input input {
+  width: 100%;
+  background: #eee;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .white .content main .input input {
+    width: 80%;
+  }
+}
+.container .white .content main .input2 {
+  display: none;
+}
+.container .white .content main button {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  background: #ff4b2b;
+  padding: 1rem 5rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+.container .red {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(91deg, #ff4b2b 0.51%, #ff416c 99.42%);
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 0 20px 20px 0;
+}
+.container .red .content {
+  max-width: 395px;
+  gap: 1.7rem;
+  font-weight: 700;
+}
+.container .red .content .red-content-text {
+  color: #fff;
+  font-size: 48px;
+}
+.container .red .content .text-2 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .red .content .text-2 {
+    width: 90%;
+  }
+}
+.container .red .content button {
+  margin-top: 1.7rem;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  padding: 1.2rem 5.4rem;
+  color: #fff;
+  font-size: 24px;
+  background: inherit;
+}
+.container .red .content .signInRed {
+  display: none;
+}
+
+@keyframes white {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes white2 {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes red {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+@keyframes red2 {
+  from {
+    right: 50%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
